@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5; /* 1.5 the default font size*/ 
+    font-size: 1.5em; /* 1.5 the default font size*/ 
     color:#027368;/* Dark teal text color */ 
 }
 /*styling the paragraph*/ 
@@ -30,7 +30,7 @@ p a {
     color:#f39c12; /* Gold accent*/ 
     text-decoration: none; /* removing underline*/ 
 } 
-/*Styling the unorderd lists*/ 
+/*Styling the unordered lists*/ 
 ul {
     list-style-type: none; /* Removing the bullet points */
     margin-left: 20px; /* Indenting the list*/ 
@@ -88,4 +88,54 @@ ul li {
 
 div ul { 
     list-style-type: square;
+}
+/* General styling using a class */ 
+.feature-card {
+    border: 2px solid #7f8c8d; /* Grayish-blue */ 
+    padding: 20px;/* Adding some space inside the card */
+    margin: 20px; /* Adding some space outside the card */
+    background-color: #f9f9f9; /* Light and Gray*/
+}
+/*styling h3 within a class*/ 
+.feature-card h3 {
+    font-size:20px; /* 20px is the default font size*/
+    margin-bottom: 10px; /*Adding some space below the heading*/
+    color:#2c3e50; /* Deep blue text color */
+}
+/* Styling p within a class */ 
+.feature-card p {
+    margin-bottom: 10px; /*Adding some space below the paragraph*/
+    color:#7f8c8d; /* Grayish-blue text color */
+}
+/* Specific styling using an ID */
+#special-feature {
+    background-color: #fde3a7; /* Light gold background color */
+    border-color: #f39c12; /* Gold border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*Styling the link in its normal state*/
+a {
+    display: inline-block; /*Making the link a block element*/
+    color:#3498db; /* Grayish-blue text color */
+    text-decoration: none;  /* Grayish-blue text color */
+    padding: 5px 10px; /* Adding some space inside the link*/
+    border: 1px solid #3498db; /* Bright blue border color*/
+    transition: all 0.3s ease; /* Adding transition */
+}
+/* Conditional styling for the hover state */
+a:hover {
+    background-color: #3498db; /*Bright blue background color*/
+    color: white; /* White text color*/
+}
+/* Styling the button */ 
+button {
+    padding: 5px 10px; /* Adding some space inside the button*/ 
+    border: none; /* Removing the boarder*/ 
+    background-color: #ecf0f1;  /* Light gray background color*/
+    cursor: pointer; /* Changing the cursor to a pointer*/
+    transition: all 0.3ease; /*Adding a transition*/ 
+}
+/*Conditional styling for the hover state*/
+button:hover {
+    background-color: red; /*Red background color*/
 }
